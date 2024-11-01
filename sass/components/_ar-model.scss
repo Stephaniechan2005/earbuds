@@ -131,8 +131,8 @@ model-viewer > #ar-prompt > img {
 
 model-viewer {
   width: auto;
-  max-width: 1200px;
-  height: 700px;
+  max-width: 1200vh;
+  height: 100vh;
   background-color: #efefef;
   margin: 0 auto;
 }
@@ -164,7 +164,7 @@ model-viewer {
   color: rgba(0, 0, 0, 0.8);
   display: block;
   font-family: Futura, Helvetica Neue, sans-serif;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 700;
   left: calc(100% + 1em);
   max-width: 128px;
@@ -179,10 +179,17 @@ model-viewer {
   color: #333;
   line-height: 22px;
   font-weight: 300;
+  font-size: 12px;
 }
 
-.HotspotAnnotationn h2 {
-  font-size: 18px;
+.HotspotAnnotation h2 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.HotspotAnnotation img {
+  width: 40px;
+  height: 40px;
   margin-bottom: 5px;
 }
 
