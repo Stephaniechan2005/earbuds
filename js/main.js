@@ -9,32 +9,32 @@
     {
       title: "Cover",
       text: "Noise Cancelling cover make you isolate from the morden world.",
-      image: "images/cover.jpg",
+      image: "images/cover.svg",
     },
     {
       title: "Adjustable Plastic Tip",
       text: "Different sizes ensure a comfortable fit for everyone.",
-      image: "images/eartip.jpg",
+      image: "images/eartip.svg",
     },
     {
       title: "Magic Circle",
       text: "the magical icon",
-      image: "images/magiccircle.jpg",
+      image: "images/magiccircle.svg",
     },
     {
       title: "Invisible Fast Charger",
       text: "Charges seamlessly and quickly without compromising design.",
-      image: "images/charger.jpg",
+      image: "images/charger.svg",
     },
     {
       title: "Round Shape Earbud Shell",
       text: "Rounded design for ultimate comfort and stability during use.",
-      image: "images/roundshape.jpg",
+      image: "images/roundshape.svg",
     },
     {
       title: "High-Quality Speaker",
       text: "Delivers immersive audio experience with deep bass and clarity.",
-      image: "images/speaker.jpg",
+      image: "images/speaker.svg",
     },
   ];
 
