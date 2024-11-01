@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Novo EarBuds</title>
+    <title>Melody EarBuds</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/main.css" rel="stylesheet" />
@@ -11,72 +11,67 @@
   <body>
     <model-viewer
       id="model"
-      src="model/earbuds.gltf"
+      src="model/earbud2.gltf"
       ar
       ar-modes="webxr scene-viewer quick-look"
-      ios-src="model/earbuds.usdz"
       camera-controls
+      tone-mapping="neutral"
       poster="images/poster.webp"
       shadow-intensity="1"
-      environment-image="images/aircraft_workshop_01_1k.hdr"
-      exposure="1.7"
-      camera-orbit="52.34deg 88.29deg 874.8m"
-      field-of-view="30deg"
+      environment-image="legacy"
     >
       <button
         class="Hotspot"
         slot="hotspot-1"
-        data-position="22.114881038306805m 76.41863141465969m 92.72411936367459m"
-        data-normal="0m 3.422854333301474e-8m 0.9999999999999996m"
+        data-position="-1.706910139855831m 2.463965102693865m -0.363869066126399m"
+        data-normal="0.01363356020783673m -0.3772070627249471m -0.9260285945188071m"
         data-visibility-attribute="visible"
       >
-        <div class="HotspotAnnotation">
-          <h2>Noise Cancelling microphone</h2>
-          <p>
-            Noise-cancelling microphone and a rear copper shield and opyimally
-            placed to detect
-          </p>
-        </div>
-      </button>
-
-      <button
+        <div class="HotspotAnnotation" id="hotspot-1"></div></button
+      ><button
         class="Hotspot"
         slot="hotspot-2"
-        data-position="39.77344034970514m 35.166245058302174m -60.072171234357924m"
-        data-normal="0.9907333466758325m -0.04850912905944068m 0.12686331298842657m"
+        data-position="-0.8395772298004205m 2.474315731466862m -1.4055994720409921m"
+        data-normal="0.8789347059177125m -0.29531297070959195m -0.37451840016749555m"
         data-visibility-attribute="visible"
       >
-        <div class="HotspotAnnotation">
-          <h2>Comfortable Fit</h2>
-          <p>three pairs of ultra thin slicon tips are includeed</p>
-        </div>
-      </button>
-
-      <button
+        <div class="HotspotAnnotation" id="hotspot-2"></div></button
+      ><button
         class="Hotspot"
         slot="hotspot-3"
-        data-position="2.4492803380076666m 10.895113621640228m -85.35108450441453m"
-        data-normal="-0.09319883119990514m 0.7267314834938743m -0.6805698559014823m"
+        data-position="-1.7848849366879875m 1.6552968321643071m 0.03890359379694963m"
+        data-normal="0.007320101477339931m -0.47284421710610763m 0.8811156351261018m"
         data-visibility-attribute="visible"
       >
-        <div class="HotspotAnnotation">
-          <h2>360 Audio</h2>
-          <p>360 Audio places sounds all around you.</p>
-        </div>
-      </button>
-
-      <button
+        <div class="HotspotAnnotation" id="hotspot-3"></div></button
+      ><button
         class="Hotspot"
         slot="hotspot-4"
-        data-position="8.209706351369618m -74.79136002933947m 11.903197074480694m"
-        data-normal="0.018820622483499312m -0.18212597696599156m -0.9830950679784314m"
+        data-position="-1.6800677489225875m -0.22492789860135298m -0.3771073490994443m"
+        data-normal="-0.0015739030880706272m 0.013417173572717328m -0.9999087469776375m"
         data-visibility-attribute="visible"
       >
-        <div class="HotspotAnnotation">
-          <h2>Ultra fast Charging</h2>
-          <p>charge your earbuds in 30 minutes or less.</p>
-        </div>
+        <div class="HotspotAnnotation" id="hotspot-4"></div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-5"
+        data-position="-3.294605041143712m 1.041220154562347m 0.24826226022868259m"
+        data-normal="-0.48106766290955655m -0.02535571252892836m 0.8763167187409402m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation" id="hotspot-5"></div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-6"
+        data-position="-1.063341114175546m 2.7107044844295025m -0.3713154009812387m"
+        data-normal="0.892910852468071m 0.450198610724214m -0.005605394431291444m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation" id="hotspot-6"></div>
       </button>
+      <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div>
       <button slot="ar-button" id="ar-button">View in your space</button>
       <div id="ar-prompt">
         <img src="images/ar_hand_prompt.png" />
@@ -85,7 +80,7 @@
     <!-- Loads <model-viewer> for browsers: -->
     <script
       type="module"
-      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
     ></script>
     <script src="js/main.js"></script>
   </body>
